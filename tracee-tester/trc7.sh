@@ -1,3 +1,1 @@
-#!/bin/sh
-
-echo "test" > /etc/ld.so.preload
+trc107.sh

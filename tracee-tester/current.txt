@@ -1,0 +1,29 @@
+TRC-101 Process standard input/output over socket detected
+TRC-102 Anti-Debugging detected (TRC-2)
+TRC-103 Code injection detected using ptrace (TRC-3)
+TRC-104 Dynamic code loading detected (TRC-4)
+TRC-105 Fileless execution detected (TRC-5)
+TRC-106 Cgroups notify_on_release file modification
+TRC-107 LD_PRELOAD code injection detected (TRC-7)
+TRC-109 ASLR inspection detected
+TRC-1010 Cgroups release agent file modification (TRC-14)
+TRC-1011 Core dumps configuration file modification detected
+TRC-1012 Default dynamic loader modification detected
+TRC-1013 Kubernetes API server connection detected
+TRC-1014 Container device mount detected (TRC-11)
+TRC-1015 Hidden executable creation detected
+TRC-1016 Web server spawned a shell (TRC-12)
+TRC-1017 Kernel module loading detected (TRC-6)
+TRC-1018 K8s TLS certificate theft detected (TRC-10)
+TRC-1019 Docker socket abuse detected
+TRC-1020 File operations hooking on proc filesystem detected (TRC-16)
+TRC-1021 Kcore memory file read
+TRC-1022 New executable dropped (TRC-9)
+TRC-1023 Process memory access detected
+TRC-1024 Code injection detected through /proc//mem file
+TRC-1025 Code injection detected using process_vm_writev syscall
+TRC-1026 Rcd modification detected
+TRC-1027 Scheduled tasks modification detected
+TRC-1028 Sudoers file modification detected
+TRC-1029 sched_debug CPU file was read
+TRC-1030 Syscall table hooking detected (TRC-15)

@@ -1,3 +1,1 @@
-#!/bin/sh
-
-cp load.so load1.so
+trc1022.sh

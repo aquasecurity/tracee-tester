@@ -1,39 +1,30 @@
 #!/bin/sh
 
-case $@ in
-  "TRC-2")
-    ./trc2.sh
-    ;;
-  "TRC-3")
-    ./trc3.sh
-    ;;
-  "TRC-4")
-    ./trc4.sh
-    ;;
-  "TRC-5")
-    ./trc5.sh
-    ;;
-  "TRC-7")
-    ./trc7.sh
-    ;;
-  "TRC-8")
-    ./trc8.sh
-    ;;
-  "TRC-9")
-    ./trc9.sh
-    ;;
-  "TRC-10")
-    ./trc10.sh
-    ;;
-  "TRC-11")
-    ./trc11.sh
-    ;;
-  "TRC-12")
-    ./trc12.sh
-    ;;
-  "TRC-14")
-    ./trc14.sh
-    ;;
-  *)
-    echo "invalid args specified:" "$@"
-esac
+exit_err() {
+    echo -n "ERROR: "
+    echo $@
+    exit 1
+}
+
+
+what=$@
+
+for test in $@; do
+    t=$test
+
+    t=${t#"TRC-"}
+    t=${t#"trc-"}
+    t=${t#"TRC"}
+    t=${t#"trc"}
+    t=${t%".sh"}
+
+    file=./trc${t}.sh
+
+    if [[ ! -x $file ]]; then
+        exit_err "could not find test $file"
+    fi
+
+    ./$file
+
+done
+

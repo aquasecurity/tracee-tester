@@ -1,3 +1,1 @@
-#!/bin/sh
-
-strace ls
+trc102.sh

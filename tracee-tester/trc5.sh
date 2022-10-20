@@ -1,3 +1,1 @@
-#!/bin/sh
-
-python2 ./fileless.py
+trc105.sh

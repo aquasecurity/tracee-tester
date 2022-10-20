@@ -1,3 +1,1 @@
-#!/bin/sh
-
-cat /etc/kubernetes/pki/token
+trc1018.sh
