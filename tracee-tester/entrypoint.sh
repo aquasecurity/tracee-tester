@@ -20,7 +20,7 @@ for test in $@; do
 
     file=./trc${t}.sh
 
-    if [[ ! -x $file ]]; then
+    if [ ! -x $file ]; then
         exit_err "could not find test $file"
     fi
 
