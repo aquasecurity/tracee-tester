@@ -1,0 +1,19 @@
+#!/bin/sh
+
+apt-get update
+
+# TRC-2 Anti-debugging
+apt-get install -y strace
+
+# TRC-4 Dynamic code loading
+apt-get install -y upx
+
+# TRC-5 Fileless execution
+apt-get install -y python2
+
+# k8s service account tokens
+mkdir -p /var/run/secrets/kubernetes.io/serviceaccount
+mkdir -p /etc/kubernetes/pki
+echo "test" > /var/run/secrets/kubernetes.io/serviceaccount/token
+echo "test" > /etc/kubernetes/pki/token
+echo "test" > /authorized_keys
