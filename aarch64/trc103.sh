@@ -1,3 +1,3 @@
 #!/bin/sh
 
-go run ../common/trc103.go
+go run ../common/ptrace-poke.go
