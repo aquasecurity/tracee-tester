@@ -1,3 +1,3 @@
 #!/bin/sh
 
-cp "$(which uname)" /tmp
+cp load.so load1.so
