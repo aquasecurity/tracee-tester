@@ -23,5 +23,4 @@ jobs:
       - name: Build
         run: |
           docker buildx create --name builder --use --bootstrap
-          docker buildx build --push --platform linux/amd64,linux/arm64 --tag ebpfcode/tracee-tester:latest .
-          docker image push quay.io/ebpfcode/tracee-tester:latest
+          docker buildx build --push --platform linux/amd64,linux/arm64 --tag quay.io/ebpfcode/tracee-tester:latest .

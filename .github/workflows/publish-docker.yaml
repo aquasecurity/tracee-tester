@@ -23,4 +23,3 @@ jobs:
         run: |
           docker buildx create --name builder --use --bootstrap
           docker buildx build --push --platform linux/amd64,linux/arm64 --tag aquasec/tracee-tester:latest .
-          docker image push aquasec/tracee-tester:latest
