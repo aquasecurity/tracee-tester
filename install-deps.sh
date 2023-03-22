@@ -8,8 +8,6 @@ apt-get update
 # TRC-2 Anti-debugging
 apt-get install -y strace
 
-# TRC-4 Dynamic code loading
-apt-get install -y upx
 
 # TRC-5 Fileless execution
 apt-get install -y python2
